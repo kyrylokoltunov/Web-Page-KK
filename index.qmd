@@ -2,7 +2,7 @@
 title: "Kyrylo Koltunov"
 toc: false
 about:
-  template: trestles
+  template: jolla
   image: kk_pic.jpeg
   image-shape: round
   image-width: 250px
