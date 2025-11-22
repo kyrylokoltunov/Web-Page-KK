@@ -15,8 +15,7 @@ about:
       href: kyrylo.koltunov@icloud.com
 ---
 
-# Welcome!
+# Hi there!
 
-Hi! I’m Kyrylo.  
-This website is my personal space where I share projects, experiences, and more.
+I'm Kyrylo, a Data Science and Statistics major at St. Olaf. My work philosophy is creating meaningful impact by letting facts and numbers guide decisions.
 
