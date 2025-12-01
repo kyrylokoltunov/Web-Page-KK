@@ -3,3 +3,35 @@ title: "Text_Analysis"
 format: html
 ---
 
+My mini project focuses on analyzing Google reviews for one of my favorite places to eat in Northfield, MN — The Ole Store Restaurant. They specialize in Norwegian and European cuisine. Their Google Maps page is quite popular, with over 800 reviews collected through the years, along with a wide variety of photos shared by both the restaurant and enthusiastic customers.
+
+I’m especially interested in examining the text of these reviews to better understand the psychology behind them and gain insight into how people truly feel about the restaurant. This analysis could help the restaurant improve and become even more popular based on customer feedback. To carry out this project I’ll draw on a variety of sources to support my investigation.
+
+```{r}
+library(dplyr)
+library(stringr)
+library(ggplot2)
+
+onetofive <- data %>%
+  mutate(
+    rating = as.numeric(rating),
+    review_text = as.character(review_text),
+    char_len = str_length(coalesce(review_text, ""))
+  ) %>%
+  filter(rating >= 1 & rating <= 5)
+
+table(onetofive$rating)
+
+ggplot(onetofive, aes(x = rating, y = char_len)) +
+  geom_point(alpha = 0.4, size = 1.5,
+             position = position_jitter(width = 0.2)) +
+  scale_x_continuous(breaks = 1:5, limits = c(1, 5)) +
+  labs(
+    title = "Review Length VS Star Rating",
+    x = "Star Rating",
+    y = "Review Length in characters"
+  ) +
+  theme_minimal()
+
+```
+
