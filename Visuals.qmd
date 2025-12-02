@@ -13,10 +13,11 @@ library(poliscidata)
 library(viridis)
 ```
 
+
 ```{r}
 raw.data <- as_tibble(poliscidata::states)
 
-us_info <- raw |>
+us_info <- raw.data |>
   transmute(
     state_name = state |>
       as.character() |>
@@ -55,19 +56,19 @@ interactive_merge <- us_full |>
       str_to_lower() |>
       str_replace_all("district of columbia","DC")
   ) |>
-  inner_join(state_info, by = "state_name") |>
+  inner_join(us_info, by = "state_name") |>
   filter(!name %in% c("Hawaii","Alaska"))
 
 pal_abort <- colorNumeric(
   palette = "RdYlGn",
-  domain = interactive_merge$abort_rate
+  domain = interactive_merge$ar
 )
 
 leaflet(interactive_merge) |>
   addTiles() |>
   setView(-96, 37.8, zoom = 4) |>
   addPolygons(
-    fillColor = ~pal_abort(abort_rate),
+    fillColor = ~pal_abort(ar),
     color = "white",
     weight = 1,
     fillOpacity = 0.8,
@@ -75,11 +76,11 @@ leaflet(interactive_merge) |>
       weight = 2, color = "#666",
       fillOpacity = 0.9, bringToFront = TRUE
     ),
-    label = ~paste0(name, ": ", abort_rate, " per 1,000 women")
+    label = ~paste0(name, ": ", ar, " per 1,000 women")
   ) |>
   addLegend(
     pal = pal_abort,
-    values = ~abort_rate,
+    values = ~ar,
     title = "Abortion Rate",
     position = "bottomright"
   )
