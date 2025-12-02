@@ -113,8 +113,13 @@ ggplot(static_merge, aes(long, lat, group = group, fill = religiosity)) +
     fill = "Religiosity",
     caption = "Janda, K., Berry, W., & Bingham Powell, G. (2019)."
   )
+```
 
+<div style="text-align: justify;">
+The map shows three levels of religiosity across the United States. States like Washington, Oregon, and Colorado fall into the low-religiosity group. The highest levels of religiosity are found in the South and parts of the central United States. There, the pattern suggests that the most religious states tend to be in the South, whereas the least religious states are mostly on the West Coast and in the Northeast.
+</div>
 
+```{r}
 pal_relig <- colorFactor(
   palette = "Set2",
   levels = c("Low","Mid","High"), 
