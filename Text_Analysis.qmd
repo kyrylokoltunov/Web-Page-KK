@@ -31,7 +31,15 @@ My mini project examines Google reviews for one of my favorite places to dine in
 Scatterplot Analysis
 ---
 
-**📌 Insert scatterplot image here**
+### Review Length by Star Rating
+---
+
+<figure>
+  <img src="pic1.png" width="75%">
+  <figcaption>
+    Scatterplot showing review length distribution across star ratings.
+  </figcaption>
+</figure>
 
 The first scatterplot shows that the longest reviews were mostly written for **5-star ratings**, while reviews with 4, 3, 2, or 1 stars tended to be shorter or even empty. Many 1-star reviews consisted of only a few words or no text at all.
 
