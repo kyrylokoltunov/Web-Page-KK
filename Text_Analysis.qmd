@@ -13,6 +13,17 @@ format:
 _By Kyrylo Koltunov_
 
 ---
+## The Ole Store – Historical Photo
+---
+
+<figure>
+  <img src="ole_pic.jpg" width="75%">
+  <figcaption>
+    Photo from “Ole Store History Project Solicits Memories & Artifacts from Community,” 
+    <a href="https://www.southernminn.com/northfield_news/news/ole-store-history-project-solicits-memories-artifacts-from-community/article_119f30cc-6f2b-11ed-8f01-436ef4f9c458.html">Southernminn.com</a>.
+  </figcaption>
+</figure>
+
 
 My mini project examines Google reviews for one of my favorite places to dine in Northfield, MN — **The Ole Store Restaurant**. Known for its Norwegian and European cuisine, this place holds a special place in the community. With over 800 Google reviews, it offers a rich dataset for meaningful text analysis.
 
