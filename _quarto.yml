@@ -10,8 +10,8 @@ website:
         text: Home
       - href: Text_Analysis.qmd
         text: Text Analysis
-      - href: resources.qmd
-        text: Resources
+      - href: Visuals.qmd
+        text: Interactive Visuals
 
 format:
   html:
