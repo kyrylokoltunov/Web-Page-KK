@@ -8,10 +8,10 @@ format:
     code-fold-default: false
     code-tools: true
 ---
-
 <div style="text-align: center;">
   <h1>The Ole Store Review Analysis</h1>
 </div>
+
 
 <figure style="text-align: center;">
   <img src="ole_pic.jpg" width="75%">
