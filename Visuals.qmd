@@ -14,58 +14,52 @@ library(viridis)
 ```
 
 ```{r}
-raw <- as_tibble(poliscidata::states)
+raw.data <- as_tibble(poliscidata::states)
 
-state_info <- raw |>
+us_info <- raw |>
   transmute(
     state_name = state |>
       as.character() |>
       str_squish() |>
       str_replace_all("([a-z])([A-Z])", "\\1 \\2") |>
-      str_to_lower(),
-
-    abort_rate   = abort_rate08,     
-    religiosity  = religiosity3     
-  ) |>
-  filter(!state_name %in% c("alaska","hawaii"))
-
+      str_to_lower(), ar = abort_rate08, religiosity  = religiosity3) |>
+      filter(!state_name %in% c("hawaii","alaska"))
 
 states_polygon <- as_tibble(map_data("state")) |>
-  select(region, group, order, lat, long)
+  select(lat, region, group,long, order)
 
 static_merge <- states_polygon |>
-  inner_join(state_info, by = c("region" = "state_name"))
+  inner_join(us_info, by = c("region" = "state_name"))
 
 static_merge$religiosity <- factor(
   static_merge$religiosity,
   levels = c("Low","Mid","High")
 )
 
-ggplot(static_merge, aes(long, lat, group = group, fill = abort_rate)) +
+ggplot(static_merge, aes(long, lat, group = group, fill = ar)) +
   geom_polygon(color = "grey30", linewidth = 0.2) +
   coord_map() +
   theme_void() +
   scale_fill_viridis_c(option = "inferno") +
   labs(
-    title = "Abortion Rate per 1,000 Women (2008)",
+    title = "Abortion Rate in 2008",
     fill = "Abortions per 1,000",
-    caption = "Data: poliscidata::states; Map: maps::map_data('state')"
+    caption = "Janda, K., Berry, W., & Bingham Powell, G. (2019)."
   )
 
+us_full <- read_sf("https://rstudio.github.io/leaflet/json/us-states.geojson")
 
-states_sf <- read_sf("https://rstudio.github.io/leaflet/json/us-states.geojson")
-
-interactive_merge <- states_sf |>
+interactive_merge <- us_full |>
   mutate(
     state_name = name |>
       str_to_lower() |>
-      str_replace_all("district of columbia","dc")
+      str_replace_all("district of columbia","DC")
   ) |>
   inner_join(state_info, by = "state_name") |>
-  filter(!name %in% c("Alaska","Hawaii"))
+  filter(!name %in% c("Hawaii","Alaska"))
 
 pal_abort <- colorNumeric(
-  palette = "inferno",
+  palette = "RdYlGn",
   domain = interactive_merge$abort_rate
 )
 
@@ -94,17 +88,17 @@ ggplot(static_merge, aes(long, lat, group = group, fill = religiosity)) +
   geom_polygon(color = "grey30", linewidth = 0.2) +
   coord_map() +
   theme_void() +
-  scale_fill_brewer(palette = "Set2") +
+  scale_fill_brewer(palette = "Dark2") +
   labs(
     title = "Religiosity Level by State",
     fill = "Religiosity",
-    caption = "Data: poliscidata::states; Map: maps::map_data('state')"
+    caption = "Janda, K., Berry, W., & Bingham Powell, G. (2019)."
   )
 
 
 pal_relig <- colorFactor(
   palette = "Set2",
-  levels = c("Low","Mid","High"),         # enforce order!
+  levels = c("Low","Mid","High"), 
   domain = interactive_merge$religiosity
 )
 
