@@ -9,8 +9,7 @@ format:
     code-tools: true
 ---
 
-# The Ole Store Restaurant – Google Reviews Analysis  
-_By Kyrylo Koltunov_
+# The Ole Store Restaurant Review Analysis
 
 ---
 ## The Ole Store – Historical Photo
