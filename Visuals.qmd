@@ -2,8 +2,6 @@
 title: "Visuals"
 ---
 
-Hello
-
 ```{r}
 #| message: false
 #| warning: false
