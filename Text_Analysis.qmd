@@ -57,13 +57,11 @@ The left hand side word cloud shows the words most frequently used in 5 star rev
   </figcaption>
 </figure>
 
-Sentiment results show:
-
-- **5-star reviews:** ~80% positive  
-- **3-star reviews:** ~60% positive  
-- **1-star reviews:** ~50% positive (surprisingly balanced)
-
-This reveals that even negative reviewers often use polite or partially positive wording. Overall, sentiment distribution is well balanced.
+The tone of Google reviews is indeed impressive. The tone in 5-star reviews is about 80% positive, while the 3-star
+reviews in the middle show around 60% positivity. The most exciting part is that even in negative 1-star comments,
+almost half of the reviews are written in a positive tone. This suggests that the place has a strong reputation among
+Google users who chose to leave reviews. While some people use Google Maps to either complain or express their
+fascination, there’s also a group of people who don’t fall into either category. With a sample size of 800, the results appear to be well balanced from a fairness perspective.
 
 
 ## Mind Map of Positive Reviews

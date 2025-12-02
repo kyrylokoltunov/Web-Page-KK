@@ -102,7 +102,7 @@
     "href": "Text_Analysis.html#tone-of-reviews",
     "title": "",
     "section": "Tone of Reviews",
-    "text": "Tone of Reviews\n\n\n\nTone of Google Reviews.\n\n\nSentiment results show:\n\n5-star reviews: ~80% positive\n\n3-star reviews: ~60% positive\n\n1-star reviews: ~50% positive (surprisingly balanced)\n\nThis reveals that even negative reviewers often use polite or partially positive wording. Overall, sentiment distribution is well balanced."
+    "text": "Tone of Reviews\n\n\n\nTone of Google Reviews.\n\n\nThe tone of Google reviews is indeed impressive. The tone in 5-star reviews is about 80% positive, while the 3-star reviews in the middle show around 60% positivity. The most exciting part is that even in negative 1-star comments, almost half of the reviews are written in a positive tone. This suggests that the place has a strong reputation among Google users who chose to leave reviews. While some people use Google Maps to either complain or express their fascination, there’s also a group of people who don’t fall into either category. With a sample size of 800, the results appear to be well balanced from a fairness perspective."
   },
   {
     "objectID": "Text_Analysis.html#possible-improvements",
