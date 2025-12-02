@@ -9,7 +9,7 @@ format:
     code-tools: true
 ---
 
-# The Ole Store Restaurant Review Analysis
+# The Ole Store Review Analysis
 
 <figure>
   <img src="ole_pic.jpg" width="75%">
