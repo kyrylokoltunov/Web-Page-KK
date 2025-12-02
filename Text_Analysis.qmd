@@ -1,11 +1,12 @@
 ---
 format:
   html:
+    theme: cosmo     
+    toc: true
+    smooth-scroll: true
     code-fold: true
-    code-tools: false
-    code-block-bg: false
-    code-block-border-left: false
-    hide-code: true
+    code-fold-default: false
+    code-tools: true
 ---
 
 # The Ole Store Restaurant – Google Reviews Analysis  
