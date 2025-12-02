@@ -3,3 +3,134 @@ title: "Visuals"
 ---
 
 Hello
+
+```{r}
+#| message: false
+#| warning: false
+library(tidyverse)
+library(maps)
+library(sf)
+library(leaflet)
+library(poliscidata)
+library(viridis)
+```
+
+```{r}
+raw <- as_tibble(poliscidata::states)
+
+state_info <- raw |>
+  transmute(
+    state_name = state |>
+      as.character() |>
+      str_squish() |>
+      str_replace_all("([a-z])([A-Z])", "\\1 \\2") |>
+      str_to_lower(),
+
+    abort_rate   = abort_rate08,     
+    religiosity  = religiosity3     
+  ) |>
+  filter(!state_name %in% c("alaska","hawaii"))
+
+
+states_polygon <- as_tibble(map_data("state")) |>
+  select(region, group, order, lat, long)
+
+static_merge <- states_polygon |>
+  inner_join(state_info, by = c("region" = "state_name"))
+
+static_merge$religiosity <- factor(
+  static_merge$religiosity,
+  levels = c("Low","Mid","High")
+)
+
+ggplot(static_merge, aes(long, lat, group = group, fill = abort_rate)) +
+  geom_polygon(color = "grey30", linewidth = 0.2) +
+  coord_map() +
+  theme_void() +
+  scale_fill_viridis_c(option = "inferno") +
+  labs(
+    title = "Abortion Rate per 1,000 Women (2008)",
+    fill = "Abortions per 1,000",
+    caption = "Data: poliscidata::states; Map: maps::map_data('state')"
+  )
+
+
+states_sf <- read_sf("https://rstudio.github.io/leaflet/json/us-states.geojson")
+
+interactive_merge <- states_sf |>
+  mutate(
+    state_name = name |>
+      str_to_lower() |>
+      str_replace_all("district of columbia","dc")
+  ) |>
+  inner_join(state_info, by = "state_name") |>
+  filter(!name %in% c("Alaska","Hawaii"))
+
+pal_abort <- colorNumeric(
+  palette = "inferno",
+  domain = interactive_merge$abort_rate
+)
+
+leaflet(interactive_merge) |>
+  addTiles() |>
+  setView(-96, 37.8, zoom = 4) |>
+  addPolygons(
+    fillColor = ~pal_abort(abort_rate),
+    color = "white",
+    weight = 1,
+    fillOpacity = 0.8,
+    highlightOptions = highlightOptions(
+      weight = 2, color = "#666",
+      fillOpacity = 0.9, bringToFront = TRUE
+    ),
+    label = ~paste0(name, ": ", abort_rate, " per 1,000 women")
+  ) |>
+  addLegend(
+    pal = pal_abort,
+    values = ~abort_rate,
+    title = "Abortion Rate",
+    position = "bottomright"
+  )
+
+ggplot(static_merge, aes(long, lat, group = group, fill = religiosity)) +
+  geom_polygon(color = "grey30", linewidth = 0.2) +
+  coord_map() +
+  theme_void() +
+  scale_fill_brewer(palette = "Set2") +
+  labs(
+    title = "Religiosity Level by State",
+    fill = "Religiosity",
+    caption = "Data: poliscidata::states; Map: maps::map_data('state')"
+  )
+
+
+pal_relig <- colorFactor(
+  palette = "Set2",
+  levels = c("Low","Mid","High"),         # enforce order!
+  domain = interactive_merge$religiosity
+)
+
+leaflet(interactive_merge) |>
+  addTiles() |>
+  setView(-96, 37.8, zoom = 4) |>
+  addPolygons(
+    fillColor = ~pal_relig(religiosity),
+    color = "white",
+    weight = 1,
+    fillOpacity = 0.8,
+    highlightOptions = highlightOptions(
+      weight = 2, color = "#666",
+      fillOpacity = 0.9, bringToFront = TRUE
+    ),
+    label = ~paste0(name, ": ", religiosity)
+  ) |>
+  addLegend(
+    pal = pal_relig,
+    values = ~religiosity,
+    title = "Religiosity Level",
+    position = "bottomright"
+  )
+
+```
+
+
