@@ -15,8 +15,6 @@ about:
       href: "mailto:kyrylo.koltunov@icloud.com"
 ---
 
-
-
 # Hi there!
 
 I'm Kyrylo, a Data Science and Statistics major at St. Olaf. 
