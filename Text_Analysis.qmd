@@ -48,8 +48,9 @@ The first scatterplot shows that the longest reviews were mostly written for 5 s
   </figcaption>
 </figure>
 
+<div style="text-align: justify;">
 The left hand side word cloud shows the words most frequently used in 5 star reviews. One of the main words is food, along with adjectives such as amazing, friendly, delicious, and fantastic. The overall set of words is very positive and highlights the restaurant’s strong service, great dishes including desserts, and the friendly staff. The middle cloud represents all 3 star reviews and suggests that some dishes were overcooked, the service was slow, and adjectives were used far less often. This cloud is mostly nouns, which shows the limited detail in this group of comments. The third and most negative cloud focuses on the 1 star reviews and shows that customers mentioned unfriendly staff, hair in the dishes, and breakfast that was not good or was simply average. There are also several unusual words like girlfriend or left that appear because of the extreme dissatisfaction expressed in some of the 1 star comments.
-
+</div>
 
 ## Tone of Reviews
 
@@ -60,12 +61,13 @@ The left hand side word cloud shows the words most frequently used in 5 star rev
   </figcaption>
 </figure>
 
+<div style="text-align: justify;">
 The tone of Google reviews is indeed impressive. The tone in 5-star reviews is about 80% positive, while the 3-star
 reviews in the middle show around 60% positivity. The most exciting part is that even in negative 1-star comments,
 almost half of the reviews are written in a positive tone. This suggests that the place has a strong reputation among
 Google users who chose to leave reviews. While some people use Google Maps to either complain or express their
 fascination, there’s also a group of people who don’t fall into either category. With a sample size of 800, the results appear to be well balanced from a fairness perspective.
-
+</div>
 
 ## Mind Map of Positive Reviews
 
@@ -105,10 +107,11 @@ Negative feedback often centers around specific items rather than general disapp
 
 ## Conclusion
 
+<div style="text-align: justify;">
 In conclusion, the Ole Store Restaurant is truly a great place to enjoy a meal in Northfield, MN. The overall ratings are highly positive and highlight the freshness of the dishes, the friendly staff, and the welcoming atmosphere. Like any other place, it also faces challenges with table assignments and certain menu items. The research shows that people tend to write longer comments for positive reviews, while often leaving very little or nothing at all for 1 star reviews, with a few exceptions. My mini project not only focuses on the specific characteristics of the restaurant but also explores the psychological aspects of review writing.
 
 Some areas for improvement include using a larger number of visuals to highlight specific issues for deeper investigation. I would also like to explore how review scores depend on the time of year, month, or day. Unfortunately, due to limitations on Google review exports, I was not able to access date information, but it would be useful to track positive and negative feedback across specific times to identify clearer trends.
-
+</div>
 
 ## Possible Improvements
 
