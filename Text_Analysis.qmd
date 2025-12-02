@@ -11,9 +11,7 @@ format:
 
 # The Ole Store Restaurant Review Analysis
 
----
 ## The Ole Store – Historical Photo
----
 
 <figure>
   <img src="ole_pic.jpg" width="75%">
@@ -23,16 +21,12 @@ format:
   </figcaption>
 </figure>
 
-
 My mini project examines Google reviews for one of my favorite places to dine in Northfield, MN, The Ole Store Restaurant. Known for its Norwegian and European cuisine, this spot holds a special place in the community. With over 800 Google reviews, it provides a strong dataset for meaningful text analysis. The goal of this project is to explore the psychology of customer feedback, understand trends in both positive and negative reviews, and highlight linguistic patterns in user-generated comments.
 
----
 
-Scatterplot Analysis
----
+## Scatterplot Analysis
 
-Review Length by Star Rating
----
+### Review Length by Star Rating
 
 <figure>
   <img src="pic1.png" width="75%">
@@ -43,10 +37,8 @@ Review Length by Star Rating
 
 The first scatterplot shows that the longest reviews were mostly written for 5 star ratings, while reviews with 4, 3, 2, or 1 star tended to be shorter or even empty. Many 1 star reviews contained only a few words or no text at all. Positive reviews tend to be longer because people are more likely to describe enjoyable experiences. Negative reviewers usually put in minimal effort unless the situation was extremely upsetting, in which case the text becomes much longer, such as the 600 character 1 star outlier.
 
----
 
-Word Clouds
----
+## Word Clouds
 
 <figure>
   <img src="pic2.png" width="75%">
@@ -57,15 +49,13 @@ Word Clouds
 
 The left hand side word cloud shows the words most frequently used in 5 star reviews. One of the main words is food, along with adjectives such as amazing, friendly, delicious, and fantastic. The overall set of words is very positive and highlights the restaurant’s strong service, great dishes including desserts, and the friendly staff. The middle cloud represents all 3 star reviews and suggests that some dishes were overcooked, the service was slow, and adjectives were used far less often. This cloud is mostly nouns, which shows the limited detail in this group of comments. The third and most negative cloud focuses on the 1 star reviews and shows that customers mentioned unfriendly staff, hair in the dishes, and breakfast that was not good or was simply average. There are also several unusual words like girlfriend or left that appear because of the extreme dissatisfaction expressed in some of the 1 star comments.
 
----
 
-Tone of Reviews
----
+## Tone of Reviews
 
 <figure>
   <img src="pic3.png" width="75%">
   <figcaption>
-    Word Cloud Patterns Across Rating Levels.
+    Tone of Google Reviews.
   </figcaption>
 </figure>
 
@@ -77,10 +67,8 @@ Sentiment results show:
 
 This reveals that even negative reviewers often use polite or partially positive wording. Overall, sentiment distribution is well balanced.
 
----
 
-Mind Map of Positive Reviews
----
+## Mind Map of Positive Reviews
 
 <figure>
   <img src="pic4.png" width="75%">
@@ -98,10 +86,8 @@ The mind map highlights:
 
 Strengths consistently revolve around quality and atmosphere.
 
----
 
-Mind Map of Negative Reviews
----
+## Mind Map of Negative Reviews
 
 <figure>
   <img src="pic5.png" width="75%">
@@ -117,17 +103,15 @@ Key negative themes include:
 
 Negative feedback often centers around specific items rather than general disapproval.
 
----
 
-Conclusion
----
+## Conclusion
 
-In conclusion, the Ole Store Restaurant is truly a great place to enjoy a meal in Northfield, MN. The overall ratings are highly positive and highlight the freshness of the dishes, the friendly staff, and the welcoming atmosphere. Like any other place, it also faces challenges with table assignments and certain menu items. The research shows that people tend to write longer comments for positive reviews, while often leaving very little or nothing at all for 1 star reviews, with a few exceptions. My mini project not only focuses on the specific characteristics of the restaurant but also explores the psychological aspects of review writing. Some areas for improvement include using a larger number of visuals to highlight specific issues for deeper investigation. I would also like to explore how review scores depend on the time of year, month, or day. Unfortunately, due to limitations on Google review exports, I was not able to access date information, but it would be useful to track positive and negative feedback across specific times to identify clearer trends.
+In conclusion, the Ole Store Restaurant is truly a great place to enjoy a meal in Northfield, MN. The overall ratings are highly positive and highlight the freshness of the dishes, the friendly staff, and the welcoming atmosphere. Like any other place, it also faces challenges with table assignments and certain menu items. The research shows that people tend to write longer comments for positive reviews, while often leaving very little or nothing at all for 1 star reviews, with a few exceptions. My mini project not only focuses on the specific characteristics of the restaurant but also explores the psychological aspects of review writing.
 
----
+Some areas for improvement include using a larger number of visuals to highlight specific issues for deeper investigation. I would also like to explore how review scores depend on the time of year, month, or day. Unfortunately, due to limitations on Google review exports, I was not able to access date information, but it would be useful to track positive and negative feedback across specific times to identify clearer trends.
 
-Possible Improvements
----
+
+## Possible Improvements
 
 - Expand visualization variety for deeper insights  
 - Investigate seasonal or monthly fluctuations in review patterns  

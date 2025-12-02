@@ -74,7 +74,7 @@
     "href": "Text_Analysis.html#conclusion",
     "title": "",
     "section": "Conclusion",
-    "text": "Conclusion\nIn conclusion, the Ole Store Restaurant is truly a great place to enjoy a meal in Northfield, MN. The overall ratings are highly positive and highlight the freshness of the dishes, the friendly staff, and the welcoming atmosphere. Like any other place, it also faces challenges with table assignments and certain menu items. The research shows that people tend to write longer comments for positive reviews, while often leaving very little or nothing at all for 1 star reviews, with a few exceptions. My mini project not only focuses on the specific characteristics of the restaurant but also explores the psychological aspects of review writing. Some areas for improvement include using a larger number of visuals to highlight specific issues for deeper investigation. I would also like to explore how review scores depend on the time of year, month, or day. Unfortunately, due to limitations on Google review exports, I was not able to access date information, but it would be useful to track positive and negative feedback across specific times to identify clearer trends."
+    "text": "Conclusion\nIn conclusion, the Ole Store Restaurant is truly a great place to enjoy a meal in Northfield, MN. The overall ratings are highly positive and highlight the freshness of the dishes, the friendly staff, and the welcoming atmosphere. Like any other place, it also faces challenges with table assignments and certain menu items. The research shows that people tend to write longer comments for positive reviews, while often leaving very little or nothing at all for 1 star reviews, with a few exceptions. My mini project not only focuses on the specific characteristics of the restaurant but also explores the psychological aspects of review writing.\nSome areas for improvement include using a larger number of visuals to highlight specific issues for deeper investigation. I would also like to explore how review scores depend on the time of year, month, or day. Unfortunately, due to limitations on Google review exports, I was not able to access date information, but it would be useful to track positive and negative feedback across specific times to identify clearer trends."
   },
   {
     "objectID": "Text_Analysis.html#future-improvements",
@@ -88,7 +88,7 @@
     "href": "Text_Analysis.html#scatterplot-analysis",
     "title": "",
     "section": "Scatterplot Analysis",
-    "text": "Scatterplot Analysis"
+    "text": "Scatterplot Analysis\n\nReview Length by Star Rating\n\n\n\nScatterplot showing review length distribution across star ratings.\n\n\nThe first scatterplot shows that the longest reviews were mostly written for 5 star ratings, while reviews with 4, 3, 2, or 1 star tended to be shorter or even empty. Many 1 star reviews contained only a few words or no text at all. Positive reviews tend to be longer because people are more likely to describe enjoyable experiences. Negative reviewers usually put in minimal effort unless the situation was extremely upsetting, in which case the text becomes much longer, such as the 600 character 1 star outlier."
   },
   {
     "objectID": "Text_Analysis.html#word-clouds",
@@ -102,7 +102,7 @@
     "href": "Text_Analysis.html#tone-of-reviews",
     "title": "",
     "section": "Tone of Reviews",
-    "text": "Tone of Reviews\n\n\n\nWord Cloud Patterns Across Rating Levels.\n\n\nSentiment results show:\n\n5-star reviews: ~80% positive\n\n3-star reviews: ~60% positive\n\n1-star reviews: ~50% positive (surprisingly balanced)\n\nThis reveals that even negative reviewers often use polite or partially positive wording. Overall, sentiment distribution is well balanced."
+    "text": "Tone of Reviews\n\n\n\nTone of Google Reviews.\n\n\nSentiment results show:\n\n5-star reviews: ~80% positive\n\n3-star reviews: ~60% positive\n\n1-star reviews: ~50% positive (surprisingly balanced)\n\nThis reveals that even negative reviewers often use polite or partially positive wording. Overall, sentiment distribution is well balanced."
   },
   {
     "objectID": "Text_Analysis.html#possible-improvements",
@@ -117,5 +117,12 @@
     "title": "",
     "section": "Review Length by Star Rating",
     "text": "Review Length by Star Rating\n\n\n\nScatterplot showing review length distribution across star ratings.\n\n\nThe first scatterplot shows that the longest reviews were mostly written for 5 star ratings, while reviews with 4, 3, 2, or 1 star tended to be shorter or even empty. Many 1 star reviews contained only a few words or no text at all. Positive reviews tend to be longer because people are more likely to describe enjoyable experiences. Negative reviewers usually put in minimal effort unless the situation was extremely upsetting, in which case the text becomes much longer, such as the 600 character 1 star outlier."
+  },
+  {
+    "objectID": "Text_Analysis.html#the-ole-store-historical-photo",
+    "href": "Text_Analysis.html#the-ole-store-historical-photo",
+    "title": "",
+    "section": "The Ole Store – Historical Photo",
+    "text": "The Ole Store – Historical Photo\n\n\n\nPhoto from “Ole Store History Project Solicits Memories & Artifacts from Community,” Southernminn.com.\n\n\nMy mini project examines Google reviews for one of my favorite places to dine in Northfield, MN, The Ole Store Restaurant. Known for its Norwegian and European cuisine, this spot holds a special place in the community. With over 800 Google reviews, it provides a strong dataset for meaningful text analysis. The goal of this project is to explore the psychology of customer feedback, understand trends in both positive and negative reviews, and highlight linguistic patterns in user-generated comments."
   }
 ]
