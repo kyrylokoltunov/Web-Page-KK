@@ -62,7 +62,12 @@ The left hand side word cloud shows the words most frequently used in 5 star rev
 Tone of Reviews
 ---
 
-**📌 Insert sentiment pie charts here**
+<figure>
+  <img src="pic3.png" width="75%">
+  <figcaption>
+    Word Cloud Patterns Across Rating Levels.
+  </figcaption>
+</figure>
 
 Sentiment results show:
 
@@ -77,7 +82,12 @@ This reveals that even negative reviewers often use polite or partially positive
 Mind Map of Positive Reviews
 ---
 
-**📌 Insert positive mind map image here**
+<figure>
+  <img src="pic4.png" width="75%">
+  <figcaption>
+    Word Cloud Patterns Across Rating Levels.
+  </figcaption>
+</figure>
 
 The mind map highlights:
 
@@ -96,12 +106,16 @@ Strengths consistently revolve around quality and atmosphere.
 Mind Map of Negative Reviews
 ---
 
-**📌 Insert negative mind map image here**
+<figure>
+  <img src="pic5.png" width="75%">
+  <figcaption>
+    Word Cloud Patterns Across Rating Levels.
+  </figcaption>
+</figure>
 
 Key negative themes include:
 
 - issues with *cheese quality*  
-- *disappointing dishes*  
 - *rolled eggs* and *rice soup*  
 - *table experience problems*  
 - concerns about *freshness*  
