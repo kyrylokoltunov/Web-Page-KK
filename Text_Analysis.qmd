@@ -25,9 +25,7 @@ _By Kyrylo Koltunov_
 </figure>
 
 
-My mini project examines Google reviews for one of my favorite places to dine in Northfield, MN — **The Ole Store Restaurant**. Known for its Norwegian and European cuisine, this place holds a special place in the community. With over 800 Google reviews, it offers a rich dataset for meaningful text analysis.
-
-The goal of this project is to explore the **psychology of customer feedback**, understand trends in positive and negative reviews, and highlight linguistic patterns in user-generated comments.
+My mini project examines Google reviews for one of my favorite places to dine in Northfield, MN, The Ole Store Restaurant. Known for its Norwegian and European cuisine, this spot holds a special place in the community. With over 800 Google reviews, it provides a strong dataset for meaningful text analysis. The goal of this project is to explore the psychology of customer feedback, understand trends in both positive and negative reviews, and highlight linguistic patterns in user-generated comments.
 
 ---
 
