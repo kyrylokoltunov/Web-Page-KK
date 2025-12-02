@@ -10,7 +10,6 @@ title: "Visuals"
   </figcaption>
 </figure>
 
-<a href="https://www.southernminn.com/northfield_news/news/ole-store-history-project-solicits-memories-artifacts-from-community/article_119f30cc-6f2b-11ed-8f01-436ef4f9c458.html">Southernminn.com</a>.
 This part of my project focuses on examining abortion rates and religiosity levels across the United States. I used several R packages to create static and interactive maps, allowing the data to be explored more clearly and in a user-friendly way. The research provides an insightful look into the relationship between these two variables. While some states enforce strict abortion bans and others do not, the level of religiosity, although important, is not the main factor driving higher or lower abortion rates when comparing states.
 
 ```{r}
@@ -135,5 +134,5 @@ leaflet(interactive_merge) |>
   )
 
 ```
-
+In conclusion, using the socio-data set from Janda, Berry, and Bingham Powell (2019) shows that the relationship between abortion rates and state-level religiosity can be a useful starting point for identifying broad patterns. However, because abortion policies, religious composition, and cultural norms vary significantly across states, a more focused, state-by-state analysis is necessary for deeper insight. Relying on visualizations alone cannot fully capture the complexity of this topic. To reach stronger, more reliable conclusions, future research should narrow the scope, select specific states or regions, and conduct more detailed statistical and contextual analysis.
 
