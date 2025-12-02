@@ -14,13 +14,14 @@ library(viridis)
 ```
 
 <figure style="text-align: center;">
-  <img src="pic6.png" width="75%">
+  <img src="pic6.pn" width="75%">
   <figcaption>
     Illustration by Michelle Pereira, The Guardian” 
-    <a href="https://www.theguardian.com/australia-news/2023/aug/22/do-australian-catholic-hospitals-perform-abortions-provide-contraception-reproductive-care</a>.
+    <a href="https://www.theguardian.com/australia-news/2023/aug/22/do-australian-catholic-hospitals-perform-abortions-provide-contraception-reproductive-care</a>">Southernminn.com</a>.
   </figcaption>
 </figure>
 
+<a href="https://www.southernminn.com/northfield_news/news/ole-store-history-project-solicits-memories-artifacts-from-community/article_119f30cc-6f2b-11ed-8f01-436ef4f9c458.html">Southernminn.com</a>.
 This part of my project focuses on examining abortion rates and religiosity levels across the United States. I used several R packages to create static and interactive maps, allowing the data to be explored more clearly and in a user-friendly way. The research provides an insightful look into the relationship between these two variables. While some states enforce strict abortion bans and others do not, the level of religiosity, although important, is not the main factor driving higher or lower abortion rates when comparing states.
 
 ```{r}
