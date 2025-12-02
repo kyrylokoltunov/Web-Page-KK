@@ -23,3 +23,32 @@ I'm Kyrylo, a Data Science and Statistics major at St. Olaf.
 
 My work philosophy is creating meaningful impact by letting facts and numbers guide decisions.
 
+<style>
+body {
+  background: #0d0d0d;
+  color: white;
+  font-family: "Fira Code", monospace;
+}
+
+/* flowing code background */
+.code-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.24;
+  animation: move 18s linear infinite;
+  background-image: url('https://raw.githubusercontent.com/arthurvr/matrix-rain/master/matrix.gif');
+  background-size: cover;
+}
+
+@keyframes move {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-300px); }
+}
+</style>
+
+<div class="code-background"></div>
